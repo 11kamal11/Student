@@ -7,7 +7,7 @@
     'author': 'Kamal',
     'depends': ['base'],
   'data': [
-    'security/ir.model.access.csv',
+    'security/ir.security.access.csv',
     'views/student_action.xml',
     'views/student_views.xml',
     'views/enrollment_views.xml',
@@ -21,5 +21,6 @@
 
     'installable': True,
     'application': True,
+    'auto_install': False,
     'license': 'LGPL-3',
 }

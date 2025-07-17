@@ -1,6 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_student,access.student,model_student_management_student,,1,1,1,1
 access_class,access.class,model_student_management_class,,1,1,1,1
+access_course,access.course,model_student_management_course,,1,1,1,1
 access_enrollment,access.enrollment,model_student_management_enrollment,,1,1,1,1
 access_student_attendance,access.student.attendance,model_student_attendance,base.group_user,1,1,1,1
 access_student_exam,access.student.exam,model_student_exam,base.group_user,1,1,1,1

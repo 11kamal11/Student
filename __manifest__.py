@@ -1,0 +1,25 @@
+{
+    'name': 'Student Management',
+    'version': '1.1',
+    'category': 'Education',
+    'summary': 'Manage students, classes, enrollments, attendance, exams, and timetable',
+    'description': 'A comprehensive student management system for schools or institutions, now with attendance, exam, and timetable management.',
+    'author': 'Kamal',
+    'depends': ['base'],
+  'data': [
+    'security/ir.model.access.csv',
+    'views/student_action.xml',
+    'views/student_views.xml',
+    'views/enrollment_views.xml',
+    'views/student_menu.xml',      
+    'views/class_views.xml',
+    'views/course_views.xml',
+    'views/attendance_views.xml',
+    'views/exam_views.xml',
+    'views/timetable_views.xml',
+],
+
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

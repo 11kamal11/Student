@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_timetable_form" model="ir.ui.view">
+        <field name="name">timetable.form</field>
+        <field name="model">student.timetable</field>
+        <field name="arch" type="xml">
+            <form string="Timetable">
+                <group>
+                    <field name="course_id"/>
+                    <field name="day"/>
+                    <field name="start_time"/>
+                    <field name="end_time"/>
+                    <field name="classroom"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_timetable_tree" model="ir.ui.view">
+        <field name="name">timetable.tree</field>
+        <field name="model">student.timetable</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="course_id"/>
+                <field name="day"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+                <field name="classroom"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_timetable" model="ir.actions.act_window">
+        <field name="name">Timetable</field>
+        <field name="res_model">student.timetable</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_timetable" name="Timetable" parent="menu_root" action="action_timetable"/>
+</odoo>

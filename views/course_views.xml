@@ -1,0 +1,38 @@
+<odoo>
+<record id="view_course_form" model="ir.ui.view">
+    <field name="name">student.management.course.form</field>  <!-- Updated -->
+    <field name="model">student.management.course</field>  <!-- Updated -->
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+        <form string="Course">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="description"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="view_course_list" model="ir.ui.view">
+    <field name="name">student.management.course.list</field>  <!-- Updated -->
+    <field name="model">student.management.course</field>  <!-- Updated -->
+    <field name="type">list</field>
+    <field name="arch" type="xml">
+        <list string="Courses">
+            <field name="name"/>
+            <field name="code"/>
+        </list>
+    </field>
+</record>
+
+<record id="action_student_courses" model="ir.actions.act_window">
+    <field name="name">Courses</field>
+    <field name="res_model">student.management.course</field>  <!-- Updated -->
+    <field name="view_mode">list,form</field>
+</record>
+
+<menuitem id="menu_student_course" name="Courses" parent="student_menu_root" action="action_student_courses"/>
+</odoo>

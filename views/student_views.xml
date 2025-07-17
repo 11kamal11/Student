@@ -1,0 +1,57 @@
+<odoo>
+    <!-- Student Tree View -->
+    <record id="view_student_tree" model="ir.ui.view">
+        <field name="name">student.tree</field>
+        <field name="model">student.management.student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" string="Student Name"/>
+                <field name="age" string="Age"/>
+                <field name="gender" string="Gender"/>
+                <field name="email" string="Email"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Student Form View -->
+    <record id="view_student_form" model="ir.ui.view">
+        <field name="name">student.form</field>
+        <field name="model">student.management.student</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <group>
+                    <field name="name" string="Student Name"/>
+                    <field name="age" string="Age"/>
+                    <field name="gender" string="Gender"/>
+                    <field name="email" string="Email"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Student Search View -->
+    <record id="view_student_search" model="ir.ui.view">
+        <field name="name">student.search</field>
+        <field name="model">student.management.student</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="gender"/>
+                <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
+                <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Student Action -->
+    <record id="action_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">student.management.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="views">[(ref('view_student_tree'), 'tree'), (ref('view_student_form'), 'form'), (ref('view_student_search'), 'search')]</field>
+    </record>
+
+    <!-- Student Menu -->
+    <menuitem id="menu_student" name="Students" parent="menu_root" action="action_student" sequence="10"/>
+</odoo>

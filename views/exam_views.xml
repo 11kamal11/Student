@@ -71,6 +71,4 @@
     </record>
 
     <!-- Menus -->
-    <menuitem id="menu_exam" name="Exams" parent="menu_root" action="action_exam"/>
-    <menuitem id="menu_exam_result" name="Exam Results" parent="menu_root" action="action_exam_result"/>
 </odoo>

@@ -1,5 +1,11 @@
 <odoo>
     <menuitem id="student_menu_root" name="Student Management"/>
-    <menuitem id="student_menu_students" name="Students" parent="student_menu_root" action="action_student"/>
-    <menuitem id="student_menu_enrollments" name="Enrollments" parent="student_menu_root" action="action_enrollment"/>
+    <menuitem id="student_menu_students" name="Students" parent="student_menu_root" action="action_student" sequence="10"/>
+    <menuitem id="student_menu_classes" name="Classes" parent="student_menu_root" action="action_class" sequence="20"/>
+    <menuitem id="student_menu_courses" name="Courses" parent="student_menu_root" action="action_student_courses" sequence="30"/>
+    <menuitem id="student_menu_enrollments" name="Enrollments" parent="student_menu_root" action="action_enrollment" sequence="40"/>
+    <menuitem id="student_menu_attendance" name="Attendance" parent="student_menu_root" action="action_attendance" sequence="50"/>
+    <menuitem id="student_menu_exams" name="Exams" parent="student_menu_root" action="action_exam" sequence="60"/>
+    <menuitem id="student_menu_exam_results" name="Exam Results" parent="student_menu_root" action="action_exam_result" sequence="70"/>
+    <menuitem id="student_menu_timetable" name="Timetable" parent="student_menu_root" action="action_timetable" sequence="80"/>
 </odoo>

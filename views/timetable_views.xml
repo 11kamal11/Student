@@ -35,5 +35,4 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_timetable" name="Timetable" parent="menu_root" action="action_timetable"/>
 </odoo>

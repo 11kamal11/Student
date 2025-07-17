@@ -43,15 +43,4 @@
             </search>
         </field>
     </record>
-
-    <!-- Student Action -->
-    <record id="action_student" model="ir.actions.act_window">
-        <field name="name">Students</field>
-        <field name="res_model">student.management.student</field>
-        <field name="view_mode">tree,form</field>
-        <field name="views">[(ref('view_student_tree'), 'tree'), (ref('view_student_form'), 'form'), (ref('view_student_search'), 'search')]</field>
-    </record>
-
-    <!-- Student Menu -->
-    <menuitem id="menu_student" name="Students" parent="menu_root" action="action_student" sequence="10"/>
 </odoo>

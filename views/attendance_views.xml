@@ -33,5 +33,4 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_attendance" name="Attendance" parent="menu_root" action="action_attendance"/>
 </odoo>

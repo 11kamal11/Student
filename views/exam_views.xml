@@ -14,16 +14,16 @@
         </field>
     </record>
 
-    <!-- Exam Tree -->
-    <record id="view_exam_tree" model="ir.ui.view">
-        <field name="name">exam.tree</field>
+    <!-- Exam List -->
+    <record id="view_exam_list" model="ir.ui.view">
+        <field name="name">exam.list</field>
         <field name="model">student.exam</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name"/>
                 <field name="course_id"/>
                 <field name="exam_date"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -43,17 +43,17 @@
         </field>
     </record>
 
-    <!-- Exam Result Tree -->
-    <record id="view_exam_result_tree" model="ir.ui.view">
-        <field name="name">exam.result.tree</field>
+    <!-- Exam Result List -->
+    <record id="view_exam_result_list" model="ir.ui.view">
+        <field name="name">exam.result.list</field>
         <field name="model">student.exam.result</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="exam_id"/>
                 <field name="student_id"/>
                 <field name="marks_obtained"/>
                 <field name="max_marks"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -61,13 +61,13 @@
     <record id="action_exam" model="ir.actions.act_window">
         <field name="name">Exams</field>
         <field name="res_model">student.exam</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_exam_result" model="ir.actions.act_window">
         <field name="name">Exam Results</field>
         <field name="res_model">student.exam.result</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <!-- Menus -->

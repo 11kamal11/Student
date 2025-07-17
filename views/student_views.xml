@@ -1,15 +1,15 @@
 <odoo>
-    <!-- Student Tree View -->
-    <record id="view_student_tree" model="ir.ui.view">
-        <field name="name">student.tree</field>
+    <!-- Student List View -->
+    <record id="view_student_list" model="ir.ui.view">
+        <field name="name">student.list</field>
         <field name="model">student.management.student</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name" string="Student Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 <field name="email" string="Email"/>
-            </tree>
+            </list>
         </field>
     </record>
 

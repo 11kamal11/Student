@@ -7,7 +7,7 @@
     'author': 'Kamal',
     'depends': ['base'],
   'data': [
-    'security/ir.security.access.csv',
+    'security/ir.model.access.csv',
     'views/student_action.xml',
     'views/student_views.xml',
     'views/enrollment_views.xml',
